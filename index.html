@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit + TS</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/demo.ts"></script>
+  </head>
+  <body>
+    <div class="node-layer">
+      <div class="node" id="node:001">Node 001</div>
+      <div class="node" id="node:002">Node 002</div>
+      <div class="node" id="node:003">Node 003</div>
+      <div class="node" id="node:004">Node 004</div>
+      <div class="node" id="node:005">Node 005</div>
+    </div>
+    <style>
+      .node-layer {
+        display: flex;
+      }
+      .node {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+
+    <script>
+      window.addEventListener("message", (e) => {
+        console.log("MSG", e.data);
+      });
+    </script>
+  </body>
+</html>
