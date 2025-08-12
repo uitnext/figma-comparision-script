@@ -2,7 +2,7 @@
   "name": "uitnext-figma-comparision-script",
   "description": "Add script and control DOM element event such as: click, mousemove",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.1-beta.2",
   "type": "module",
   "contributors": [
     {
